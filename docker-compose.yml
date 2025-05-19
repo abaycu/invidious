@@ -7,24 +7,10 @@ services:
     environment:
       INVIDIOUS_CONFIG: |
         db:
-          dbname: invidious
-          user: kemal
-          password: kemal
-          host: invidious-db
+          dbname: railway
+          user: postgres
+          password: JAfMPuKmusTsVuKNPctJNddgWswggzMB
+          host: postgres.railway.internal
           port: 5432
         check_tables: true
         hmac_key: "CHANGE_ME"
-    depends_on:
-      - invidious-db
-
-  invidious-db:
-    image: postgres:12
-    environment:
-      POSTGRES_DB: invidious
-      POSTGRES_USER: kemal
-      POSTGRES_PASSWORD: kemal
-    volumes:
-      - invidious-db-data:/var/lib/postgresql/data
-
-volumes:
-  invidious-db-data:
