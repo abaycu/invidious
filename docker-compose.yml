@@ -1,7 +1,7 @@
 version: "3"
 services:
   invidious:
-    build: .
+    image: quay.io/invidious/invidious:latest
     ports:
       - "3000:3000"
     environment:
