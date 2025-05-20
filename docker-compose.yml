@@ -13,4 +13,4 @@ services:
           host: postgres.railway.internal
           port: 5432
         check_tables: true
-        hmac_key: "Tj7ZpQ4sMb2YwXnLUgRcKvhEo89N1V3aFAJxqDiKmt"
+        hmac_key: "GucluBirAnahtar1234567890AaBbCcDdEe"
